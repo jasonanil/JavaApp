@@ -1,14 +1,15 @@
 pipeline {
     agent any
+
     stages {
-        stage('Test') {
+        stage('Java Class') {
             steps {
-                script {
-                    if (isUnix()) {
-                        sh 'java ./src/Hello.java'
-                    } else {
-                        bat 'java ./src/Hello.java'
-                    }
+                script{
+                if(isUnix()){
+                    sh 'java ./src/Hello.java'
+                }else{
+                    bat 'java ./src/Hello.java'
+                }
                 }
             }
         }
