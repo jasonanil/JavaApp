@@ -11,7 +11,6 @@ public class Hello {
 
 */
 
-
      System.out.println("Hello from Java");
 
         for (int i = 1; i <= 5; i++) {
