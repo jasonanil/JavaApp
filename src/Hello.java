@@ -26,7 +26,5 @@ public class Hello {
             // Move to the next line after each row
             System.out.println();
         }
-
-        
     }
 }
